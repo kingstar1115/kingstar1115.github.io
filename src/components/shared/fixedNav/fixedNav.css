@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+    font-size: 24px;
+}
+
+.fixedNav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: #333333;
+    border-radius: 40px;
+    height: 165px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .fixedNav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        background-color: #333333;
+        border-radius: 40px;
+        height: 50px;
+        width: 165px;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.IconButton {
+    background-color: #50C878 !important;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 1000px) {
+    .IconButton {
+        background-color: #50C878 !important;
+        margin: 7px;
+    }
+}
+
+.IconButton:hover{
+    background-color: #3bb263 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.overviewButton{
+    background-color: red !important;
+    border-radius: 50%;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(200%) translateY(-50%);
+    }
+    to {
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0) translateY(-50%);
+    }
+    to {
+        transform: translateX(200%) translateY(-50%);
+    }
+}
+
+.slide-in {
+    animation: slideInRight 0.2s ease forwards;
+}
+
+.slide-out {
+    animation: slideOutRight 0.2s ease forwards;
+}

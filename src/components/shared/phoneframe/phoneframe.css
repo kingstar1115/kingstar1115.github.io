@@ -1,0 +1,198 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #191716;
+}
+
+html {
+  background-color: #191716;
+}
+
+h1 {
+  color: red;
+  font-size: 24px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.rightContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  .flowMargin {
+    margin-left: 500px;
+  }
+}
+
+.flexLateral {
+  display: flex;
+  background-color: #191716;
+}
+
+@media (min-width: 1000px) {
+  .leftBackground {
+    position: fixed;
+    background-color: #191716;
+    height: 100%;
+    width: 500px;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dissapearCard {
+    display: none;
+  }
+}
+
+.floatingCard {
+  background-color: #191716;
+  max-height: 800px;
+  min-height: 600px;
+  height: 95%;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(28, 28, 28, 0.9);
+  animation: slideIn 0.85s cubic-bezier(0.68, -0.55, 0.27, 1.35);
+}
+
+.phoneContent {
+  border-radius: 15px;
+  height: 96%;
+  width: 94%;
+  background-color: #191716;
+}
+
+.notch {
+  position: absolute;
+  transform: translateX(50%);
+  width: 200px;
+  height: 30px;
+  background-color: #191716;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 2px 5px rgba(28, 28, 28, 0.9);
+}
+
+.upperHalf {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #50c878;
+  height: 50%;
+  width: 100%;
+}
+
+.belowHalf {
+  border-radius: 0px 0px 20px 20px;
+  background-color: #333333;
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.bodyText {
+  color: white;
+  font-family: "Lexend Light", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.littleTopOffset {
+  top: -15px;
+}
+
+.trickyWhiteDecoration {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  top: -20px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #333333;
+}
+
+.iconEmail {
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.socialIcon {
+  margin-left: 15px;
+  color: white;
+  font-size: 45px;
+}
+
+.socialIcons {
+  background-color: #333333;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 30px;
+}
+
+.socialIcon:hover {
+  color: #50c878;
+}
+
+.flagText {
+  font-size: 15px;
+  color: white;
+}
+
+.offsetBelow {
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  margin-top: -20px;
+  height: 50%;
+  width: 100%;
+}
+
+.pfp {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(28, 28, 28, 0.9);
+}
+
+.nameText {
+  color: white;
+  font-weight: bold;
+  font-family: "Lexend Light", sans-serif;
+  font-size: 1.5rem;
+}
+
+.subText {
+  color: white;
+  font-weight: bold;
+  font-family: "Lexend Light", sans-serif;
+  font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191716;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #504d4d;
+}
